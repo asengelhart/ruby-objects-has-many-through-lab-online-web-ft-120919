@@ -1,4 +1,4 @@
-class Artist 
+.class Artist 
   @@all = []
   
   def self.all 
@@ -14,6 +14,6 @@ class Artist
   end 
   
   def genres 
-    
+    songs.map{|song| song.genre}.uniq 
   end 
 end 
